@@ -1,1 +1,420 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:ital,wght@0,700;1,400&display=swap');
+
+/* resets classes */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+
+p {
+    font-family: 'Roboto' sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+/*utility classes*/
+
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.question_mark{
+    border: 1px solid;
+    border-radius: 34px;
+    padding: 6px 12px;
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #023341;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    top: 26px;
+    right: 18px;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+.primary-button{
+    border: 1px solid;
+    border-radius: 19px;
+    color: black !important;
+    padding: 5px 11px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.primary-button:hover{
+    background-color: #5a3954;
+    color: white !important;
+}
+
+
+.secondary-button{
+    border: 1px solid;
+    border-radius: 19px;
+    color: black !important;
+    padding: 7px 13px;
+    
+}
+
+
+.secondary-button:hover{
+    background-color: #149a9b;
+    color: white !important;
+}
+
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between ;
+    padding-bottom: 10px;
+    border-bottom: 4px solid#bbbbbb;
+}
+
+.company-logo img{
+    width: 130px;
+}
+
+
+.nav-links{
+    flex-basis: 720px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap:40px;
+}
+
+.header-section{
+    justify-content: center;
+    gap: 200px;
+}
+
+.header-left{
+    justify-content: flex-start;
+    min-width: 26vw;
+}
+
+.header-lefth1{
+    margin-top: 2px;
+}
+
+.get-started-btn{
+    margin: 20px;
+}
+
+.header-right{
+    gap: 36px;
+    min-width: 45vw;
+    min-height: 50vw;
+}
+
+.span_class{
+    color: #ff5c02;
+}
+
+.header_right1{
+    display: flex;
+    align-items: flex-end;
+}
+
+.header_right2{
+    display: flex;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.header-right img{
+    width: 170px;
+}
+
+.input_box{
+    height: 60px;
+}
+
+.suitcase{
+    width: 27px;
+    margin-block: 20px;
+}
+
+.find_button{
+    border: 1px solid ;
+    border-radius: 6px;
+    background-color: #ff5c02;
+    color: whitesmoke;
+    padding: 12px 24px;
+}
+
+form {
+    display:flex;
+    flex-direction:row;
+    border:2px solid grey;
+    border-radius: 10px;
+    padding:1px;
+    width: 500px;
+    margin-top: 12px;
+  }
+  
+  input {
+    flex-grow:4;
+    border:none;
+  }
+  
+  form:focus-within { 
+    outline: 1px solid #ff5c02 
+  }
+  
+  button {
+    border:1px solid #ff5c02;
+    background:#ff5c02;
+    color:white;
+  }
+
+  
+  .container2 {
+    max-width: 1080px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+  .companies-header{
+    text-align: center;
+    margin-block: 20px;
+}
+
+.logos{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.big-features-section{
+    flex-direction: column;
+}
+
+.big-features-container{
+    display: flex;
+    width: 1100px;
+    flex-direction: row;
+    gap: 190px;
+    margin-top: 5%;
+}
+
+.feature-img img{
+    width: 100%;
+}
+
+.recommend_header{
+    margin-inline-start: 9%;
+    margin-top: 10%;
+}
+
+footer{
+    margin-inline: auto;
+    margin-top: 9%;    
+}
+
+.footer-container{
+    width: 90%;
+    height: 150px;
+    border-top: 4px solid #bbbbbb;
+    background-color: #e1dcdc;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 991px){
+    
+    .container {
+        overflow: hidden;
+    }
+    .header-right img{
+        width: 28%;
+    }
+
+    form {
+        width: 400px;
+        margin-top: 12px;
+      }
+
+      .find_button{
+        padding: 7px 15px;
+    }
+    
+    .footer-container{
+        margin-left: 8%;
+    }
+
+}
+
+    @media screen and (max-width: 767px){
+
+        .header-left{
+            min-width: 22vw;
+            margin-left: 4%;
+        }
+
+        .header-right{
+            gap: 25px;
+            min-width: 35vw;
+            min-height: 40vw;
+        }
+
+        .header-right img{
+            width: 24%;
+        }
+
+        form {
+            width: 300px;
+            margin-top: 10px;
+          }
+
+        .logos{
+            gap: 10px;
+        }
+    
+        .footer-container{
+            margin-left: 25%;
+        }
+    
+    }
+
+    @media screen and (max-width: 612px){
+        .header-right{
+            gap: 15px;
+            min-width: 30vw;
+            min-height: 30vw;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        .company-logo img{
+            width: 100px;
+        }
+        
+        .header-right{
+          margin-right: 10%;
+        }
+        
+        .nav-links{
+            flex-basis: 720px;
+        }
+        
+        .nav-links ul{
+            justify-content: end;
+            gap:20px;
+        }
+    }
+
+
+    @media screen and (max-width: 479px){
+     
+        .company-logo img{
+            width: 80px;
+        }
+
+        .nav-links ul{
+            justify-content: end;
+            gap:10px;
+        }
+
+        .header-left{
+            min-width: 24vw;
+            margin-left: 45%;
+        }
+
+        .header-right{
+            margin-right: 40%;
+          }
+
+        .header-right img{
+            width: 24%;
+        }
+
+        form {
+            width: 300px;
+            margin-top: 10px;
+          }
+
+        .logos{
+            gap: 5px;
+        }
+    
+        .footer-container{
+            margin-left: 65%;
+        }
+    
+    
+        
+    
+    }
+
+    @media screen and (max-width: 390px){
+
+        .header-left{
+            min-width: 20vw;
+            margin-left: 60%;
+        }
+
+        .header-right{
+            margin-right: 50%;
+          }
+
+        .company-logo img{
+            width: 40px;
+        }
+
+        .logos{
+            gap: 0px;
+        }
+
+        .footer-container{
+            margin-left: 85%;
+        }
+    
+
+    }
+    
+    
+      

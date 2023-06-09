@@ -177,17 +177,19 @@ ul{
 
 .find_button{
     border: 1px solid ;
-    border-radius: 6px;
+    border-radius: 25px;
     background-color: #ff5c02;
     color: whitesmoke;
-    padding: 12px 24px;
+    padding: 3px 25px;
+    margin-block: 1px;
+    margin-inline: 5px;
 }
 
 form {
     display:flex;
     flex-direction:row;
     border:2px solid grey;
-    border-radius: 10px;
+    border-radius: 13px;
     padding:1px;
     width: 500px;
     margin-top: 12px;

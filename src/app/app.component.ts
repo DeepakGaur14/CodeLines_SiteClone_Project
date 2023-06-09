@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'websiteClone';
+
+  constructor(){
+  }
+
+
+  ngOnInit():void {
+    $(function(){
+      $(function(){
+        $('.input_box').mouseover(function(){
+          $(this).attr('placeholder', 'Try "Business" | Jaipur Location');
+        });
+        $('.input_box').mouseout(function(){
+          var holder = $(this).data('ph');
+          $(this).attr('placeholder', holder);
+        });
+      })
+    })
+  }
 }

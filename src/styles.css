@@ -200,10 +200,6 @@ form {
     border:none;
   }
   
-  form:focus-within { 
-    outline: 1px solid #ff5c02 
-  }
-  
   button {
     border:1px solid #ff5c02;
     background:#ff5c02;
